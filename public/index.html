@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>José Carlos Ribeiro dos Santos | Portfólio</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Source+Sans+3:wght@400;600&family=Source+Serif+4:wght@600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/style.css">
+</head>
+<body>
+<header><div class="bar"><a class="brand" id="brand" href="#inicio">José Carlos</a>
+<nav aria-label="Principal"><a href="#inicio" data-nav="inicio">Início</a><a href="#curriculo" data-nav="curriculo">Currículo</a><a href="#admin" data-nav="admin" id="navadm" hidden>Admin</a><a class="login" href="#entrar" id="navlogin">Entrar</a></nav></div></header>
+<div class="wrap">
+<section data-view id="v-inicio"><div class="hero"><div class="photo" id="foto" role="img" aria-label="Foto profissional"></div><div>
+<h1 id="h-nome"></h1><p class="role" id="h-cargo"></p><p id="h-intro"></p><p class="muted" id="h-local"></p>
+<div class="btns"><a class="btn" href="#curriculo">Ver currículo</a><a class="btn alt" href="#entrar">Entrar na área restrita</a><span id="h-links" class="btns nomt"></span></div></div></div></section>
+
+<section data-view id="v-curriculo"><div class="page"><h1>Currículo</h1>
+<p class="sub">Analista de Sistemas com experiência em suporte técnico de TI, implantação de softwares corporativos e gestão de processos operacionais.</p>
+<h2 class="f1">Experiência profissional</h2><ol class="tl">
+<li><h3>Analista de Suporte TI Pleno</h3><div class="muted">Techmobil Consultoria em Software e TI</div><div class="when">Junho de 2019 – atual</div><ul>
+<li>Atendimento técnico remoto, telefônico e presencial, com triagem, diagnóstico e resolução de incidentes.</li>
+<li>Gestão de tickets em plataforma interna, com rastreamento do histórico e retorno aos solicitantes.</li>
+<li>Instalação e manutenção de computadores, periféricos, aplicativos de escritório e rede local.</li>
+<li>Gestão de credenciais, e-mails corporativos e perfis de acesso, com critérios de proteção digital.</li>
+<li>Acompanhamento de backups, atualizações de segurança e antivírus corporativo.</li>
+<li>Inventário de hardware e licenças, apoiando o planejamento de substituições e compras.</li>
+<li>Orientação de colaboradores sobre o uso seguro das ferramentas.</li>
+<li>Integrações via XML/Webservice e ajustes de interface em HTML/CSS.</li></ul>
+<p class="muted small">Ferramentas: VS Code, Postman, SoapUI, New Relic, Datadog, Windows/Linux, Pacote Office, Redes e Backup.</p></li>
+<li><h3>Agente de Monitoramento</h3><div class="muted">Cana Brava Resort</div><div class="when">Setembro de 2018 – Junho de 2019</div><ul><li>Supervisão em tempo real de áreas operacionais por central informatizada.</li><li>Consolidação diária de indicadores em planilhas para auditoria interna de insumos e fluxos logísticos.</li></ul></li></ol>
+<h2>Formação e certificações</h2><div class="two"><div><h3>Formação acadêmica</h3>
+<p class="mt"><strong>Tecnologia em Análise e Desenvolvimento de Sistemas</strong> (2023)<br><span class="muted">Universidade Pitágoras Unopar Anhanguera, Ilhéus</span></p>
+<p><strong>Técnico em Analista de Banco de Dados</strong> (2020)<br><span class="muted">Instituto de Gestão e Tecnologia da Informação (IGTI)</span></p></div>
+<div><h3>Certificações</h3><ul class="mt"><li>Testes Automáticos e Curso Completo de Teste de Software (2022)</li><li>Programação de Software Básico (2022)</li><li>Introdução ao Banco de Dados MySQL (2020)</li></ul></div></div>
+<h2>Habilidades</h2><ul class="tags"><li>Suporte técnico 1º e 2º nível</li><li>Gestão de chamados (SLA)</li><li>Manutenção de hardware e periféricos</li><li>Segurança da informação e LGPD</li><li>Rotinas de backup e antivírus</li><li>Controle de inventário de TI</li><li>Sistemas operacionais e redes</li><li>Banco de dados MySQL</li><li>Integração XML e Webservice</li><li>Power BI</li><li>Pacote Office</li></ul>
+<h2>Contato</h2><p>E-mail: <a id="c-email" href="#"></a><br><span id="c-local"></span></p></div></section>
+
+<section data-view id="v-entrar"><div class="lb"><h1>Área restrita</h1><p class="muted">Entre com o usuário e a senha enviados a você para ver os dashboards.</p>
+<label for="u">Usuário</label><input id="u" type="text" autocomplete="username"><label for="s">Senha</label><input id="s" type="password" autocomplete="current-password">
+<p id="erro" role="alert"></p><button class="btn" id="entrar" type="button">Entrar</button></div></section>
+
+<section data-view id="v-painel"><div class="app"><div class="side" id="side"></div><div class="panel" id="det"></div></div></section>
+
+<section data-view id="v-admin"><div class="page"><h1>Administração</h1><p class="sub">Painel do administrador. As alterações ficam salvas no banco de dados assim que você clica em Salvar.</p>
+<p class="msg" id="adm-msg" role="status"></p><div id="adm"></div></div></section>
+<footer>© 2026 <span id="f-nome"></span></footer>
+</div>
+<script src="/app.js"></script>
+</body>
+</html>
